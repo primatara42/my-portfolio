@@ -104,7 +104,7 @@ const Main = () => {
       <h3 className="text-xl font-bold mb-2">Pengalaman Saya</h3>
       <ul>
         {experiences.map((exp) => (
-                    <li className="">
+                    <li className="my-7">
                     <div className=" flex justify-between">
                       <div className="content_container flex ">
                         <img src={exp.photo} className="mb-2 max-w-xs w-[100px]" />
@@ -115,16 +115,16 @@ const Main = () => {
                           <p className="text-[#9d9d9d]">{exp.date}</p>
                         </div>
                       </div>
-                      <div className="button_container">
+                      <div className="button_container space-y-5">
                       <button
                         onClick={() => handleEdit(exp.id)}
-                        className="bg-[#F6995C] text-white rounded mr-5 px-5 py-3"
+                        className="bg-[#F6995C] text-white rounded mr-5 px-5 py-3 w-[100%]"
                       >
                         Ubah
                       </button>
                       <button
                         onClick={() => handleDelete(exp.id)}
-                        className="bg-[#FF8080] text-white rounded mr-5 px-5 py-3"
+                        className="bg-[#FF8080] text-white rounded mr-5 px-5 py-3 w-[100%]"
                       >
                         Hapus
                       </button>
